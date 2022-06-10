@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>HARRY POTTER</title> 
+</head>
+<body>
+<div id="cabecera">
+<h1>Galeria de imagnes imágenes</h1>
+</div>
+<div id="menu">
+<img src='harry10.jpg' alt='1. Harry Potter - El Prisionero de azkaban.' name='fotos1' onclick="mifoto(1)"/>
+<img src='harry2.jpg' alt='2. Harry Potter - El Prisionero de azkaban.' name='fotos2' onclick="mifoto(2)"/>
+<img src='harry3.jpg' alt='3. Harry Potter - El Prisionero de azkaban.' name='fotos3' onclick="mifoto(3)"/>
+<img src='harry4.jpg' alt='4. Harry Potter - El Prisionero de azkaban.' name='fotos4' onclick="mifoto(4)"/>
+<img src='harry5.jpg' alt='5. Harry Potter - El Prisionero de azkaban.' name='fotos5' onclick="mifoto(5)"/>
+<img src='harry6.jpg' alt='6. Harry Potter - El Prisionero de azkaban.' name='fotos6' onclick="mifoto(6)"/>
+<img src='harry7.jpg' alt='7. Harry Potter - El Prisionero de azkaban.' name='fotos7' onclick="mifoto(7)"/>
+<img src='harry8.jpg' alt='8. Harry Potter - El Prisionero de azkaban.' name='fotos8' onclick="mifoto(8)"/>
+<img src='images (2).jpg' alt='1. Harry Potter - El Prisionero de azkaban.' name='fotos1' onclick="mifoto(1)"/>
+<img src='images (1).jpg' alt='2. Harry Potter - El Prisionero de azkaban.' name='fotos2' onclick="mifoto(2)"/>
+<img src='images (3).jpg' alt='3. Harry Potter - El Prisionero de azkaban.' name='fotos3' onclick="mifoto(3)"/>
+<img src='images (4).jpg' alt='4. Harry Potter - El Prisionero de azkaban.' name='fotos4' onclick="mifoto(4)"/>
+<img src='images (5).jpg' alt='5. Harry Potter - El Prisionero de azkaban.' name='fotos5' onclick="mifoto(5)"/>
+<img src='images (6).jpg' alt='6. Harry Potter - El Prisionero de azkaban.' name='fotos6' onclick="mifoto(6)"/>
+<img src='images.jpg' alt='7. Harry Potter - El Prisionero de azkaban.' name='fotos7' onclick="mifoto(7)"/>
+<img src='descarga.jpg' alt='8. Harry Potter - El Prisionero de azkaban.' name='fotos8' onclick="mifoto(8)"/>
+<img src='harry potter12.jpg' alt='1. Harry Potter - El Prisionero de azkaban.' name='fotos1' onclick="mifoto(1)"/>
+<img src='harry.jpg' alt='2. Harry Potter - El Prisionero de azkaban.' name='fotos2' onclick="mifoto(2)"/>
+<img src='harry9.jpg' alt='3. Harry Potter - El Prisionero de azkaban.' name='fotos3' onclick="mifoto(3)"/>
+<img src='harryp.jpg' alt='4. Harry Potter - El Prisionero de azkaban.' name='fotos4' onclick="mifoto(4)"/>
+</div>
+<div id="principal">
+<div id="visor">
+   <img src='harry-potter.jpg' alt='1. Harry Potter - El Prisionero de azkaban. .' name='fotoVisor'/>
+   <div id="titulo">1. Harry Potter - El Prisionero de azkaban..</div>
+   </div>
+<style type="text/css">
+* { margin: auto; padding: 0; text-align: center }
+#cabecera { font: bold 1.3em verdana; background-color: #feffe4;  }
+h1 { text-align: center ; padding: 0.5em }
+#menu { float: left; width: 25%; background-color: #e3f2ff; }
+#menu img { width: 35%; margin: 5%; cursor: pointer; }
+#principal { float: left; width: 75%; }
+#visor { width: 60%; margin: 10% }
+#visor img { width: 100% }
+<script type="text/javascript">
+window.onload = function() { //tras cargar la página ...
+visor1=document.getElementById("visor"); //referencia al visor
+mititulo=document.getElementById("titulo"); //referencia al pie de foto
+}
+function mifoto(num) { //cambiar la imagen
+         f="harry10"+10+"harry10.jpg"; //ruta de la nueva imagen
+         document.images["fotoVisor"].src=f; //cambiar imagen
+         t=document.images["fotos"+num].alt; //texto de pie de foto
+         mititulo.innerHTML=t; //cambiar pie de foto
+         }
+</script>
+
+</style>
+</div>
+</body>
+</html>
